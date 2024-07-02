@@ -9,7 +9,7 @@ import (
 )
 
 func init() {
-	stripe.Key = "sk_test_8bZtX27RlHVMwe0YexxgBB1s"
+	stripe.Key = ""
 }
 
 func chargeAccount(ctx context.Context, stripeToken string) error {

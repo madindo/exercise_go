@@ -8,7 +8,7 @@ import (
 	"os"
 )
 
-const GoogleAPIKey = "AIzaSyDpMNCWNz2UENVGQOS6zMFvtLsXn0zMBf4"
+const GoogleAPIKey = ""
 
 var tpls *template.Template
 

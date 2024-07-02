@@ -7,7 +7,7 @@ import (
 	"google.golang.org/appengine/urlfetch"
 )
 
-const secretKey = "sk_test_C4cVqiMxarOi7drYWgUsXmLr"
+const secretKey = ""
 
 func chargeAccount(ctx context.Context, stripeToken string) error {
 	b := stripe.BackendConfiguration{stripe.APIBackend, "https://api.stripe.com/v1", urlfetch.Client(ctx)}
