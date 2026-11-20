@@ -14,11 +14,12 @@ import (
 	"github.com/nu7hatch/gouuid"
 	"io"
 	"net/http"
+	"os"
 )
 
 var conf = &oauth2.Config{
-	ClientID:     "979509136073-10ce3r5s8mka304l6od82t3nltp9cf8s.apps.googleusercontent.com",
-	ClientSecret: "5zwpEL5WwwekeMsZoz6mcC0s",
+	ClientID:     os.Getenv("GOOGLE_OAUTH_CLIENT_ID"),
+	ClientSecret: os.Getenv("GOOGLE_OAUTH_CLIENT_SECRET"),
 	RedirectURL:  "https://practical-scion-114602.appspot.com/oauth2callback",
 	Scopes:       []string{"https://www.googleapis.com/auth/gmail.readonly"},
 	Endpoint:     google.Endpoint,
